@@ -13,7 +13,7 @@ function shell(){
                 hyperledger/fabric-tools:$FABRIC_TOOL_VERSION /bin/bash
 }
 
-function cert(){
+function certs(){
     docker run -it --rm -e "GOPATH=/opt/gopath" \
                 -e "FABRIC_CFG_PATH=/opt/gopath/src/github.com/hyperledger/fabric" \
                 -w="/opt/gopath/src/github.com/hyperledger/fabric" \
@@ -38,8 +38,8 @@ function channel(){
 }
 
 case $COMMAND in
-    cert)
-        cert
+    certs)
+        certs
         ;;
     genesis)
         genesis
@@ -54,6 +54,6 @@ case $COMMAND in
         rm -rf ./assets
         ;;
     *)
-        echo "Usage: ${CLI_NAME} [ shell | clean ]"
+        echo "Usage: ${CLI_NAME} [ certs | genesis | channel | shell | clean ]"
         ;;
 esac
