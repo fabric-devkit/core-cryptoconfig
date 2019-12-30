@@ -214,11 +214,11 @@ Orderer: &OrdererDefaults
   OrdererType: etcdraft
 
   Addresses:
-    - orderer.fabric1.network:7050
-    - orderer.fabric2.network:7050
-    - orderer.fabric3.network:7050
-    - orderer.fabric4.network:7050
-    - orderer.fabric5.network:7050
+    - orderer.org1.fabric1.network:7050
+    - orderer.org2.fabric2.network:7050
+    - orderer.org3.fabric3.network:7050
+    - orderer.org4.fabric4.network:7050
+    - orderer.org5.fabric5.network:7050
 
   # Batch Timeout: The amount of time to wait before creating a batch
   BatchTimeout: 2s
