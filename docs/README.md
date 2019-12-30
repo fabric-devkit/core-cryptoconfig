@@ -1,19 +1,14 @@
 # Overview
 
-`cryptogen` and `configtxgen` tools for generating cryptographic and channel materials necessary for the operations of the Fabric network. For more details please refer to Fabric's official documentations:
+The purpose of this subproject is to demonstrate the step involve generating [Membership Service Provider (MSP)](https://hyperledger-fabric.readthedocs.io/en/release-1.4/msp.html), genesis blocks and channel configuration (i.e. core crypto materials) 
 
-* [Membership Service Provider (MSP)](https://hyperledger-fabric.readthedocs.io/en/release-1.4/msp.html);
-* [Channel configuration](https://hyperledger-fabric.readthedocs.io/en/release-1.4/configtx.html);
-* [cryptogen tool](https://hyperledger-fabric.readthedocs.io/en/release-1.4/commands/cryptogen.html);
-* [configtxgen](https://hyperledger-fabric.readthedocs.io/en/release-1.4/commands/configtxgen.html).
-
-The purpose of this subproject is to demonstrate the capabilities of `cryptogen` and `configtxgen` tools.
+The principal or baseline tools involved in generating these artefacts are [cryptogen](https://hyperledger-fabric.readthedocs.io/en/release-1.4/commands/cryptogen.html) and [configtxgen](https://hyperledger-fabric.readthedocs.io/en/release-1.4/commands/configtxgen.html).
 
 ## Content
 
-| Item | Description |
+| Demonstrator | Description |
 | --- | --- |
-
+| `basic-cli` |  This uses a combination of `cryptogen tools`, `configtxgen tools`, `docker` and `bash scripts` to generate core crypto artefacts. |
 
 ## Copyright Notice
 
